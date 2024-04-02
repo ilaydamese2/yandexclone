@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="https://translate.yandex.com/icons/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/0b9f70fb92.js" crossorigin="anonymous"></script>
+  <title>Yandex Çeviri Clone</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left-section">
+     
+      <div class="header-logo">
+        <a tabindex="0" class="header-logo-yandex" target="_top" title="Yandex" data-tracking-data='{"id": "yandex"}'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="72.072" height="28.128"></svg>
+        </a>
+     
+      </div>
+      <!-- navbar -->
+      <h3 id="Logo">Yandex Çeviri</h3>
+      <ul id="NavbarList">
+        <li id="NavbarItem1" class="NavbarItem"><a href="#"><i class="fas fa-house"></i> <span id="MetinInfo"> Metin</span></a></li>
+        <li id="NavbarItem2" class="NavbarItem"><a href="#"><i class="far fa-comments"></i> <span id="OrnekInfo"> Örnekler</span></a></li>
+        <li id="NavbarItem3" class="NavbarItem"><a href="#"><i class="fas fa-tv"></i> <span id="SiteInfo"> Siteler</span></a></li>
+        <li id="NavbarItem4" class="NavbarItem"><a href="#"><i class="far fa-file"></i> <span id="BelgeInfo"> Belgeler</span></a></li>
+        <li id="NavbarItem5" class="NavbarItem"><a href="#"><i class="far fa-image"></i> <span id="GorselInfo"> Görseller</span></a></li>
+      </ul>
+      
+    </div>
+    <div class="header-right-section">
+      <div class="user-profile">
+        <img src="images.jpeg" alt="Kullanıcı Resmi" style="width: 30px; height: 30px; object-fit: cover;">
+      </div>
+      <div class="translator-row" id="translator-row">
+        <div class="translator" id="translator">
+          <div id="langs-panel">
+            <button id="translateFrom">Türkçe</button>
+            <button id="swap-lang">
+              <i class="fas fa-exchange-alt fa-xs"></i>
+            </button>
+            <button id="translateTo">İngilizce</button>
+          </div>
+          <div class="box-container">
+            <textarea name="input-text" id="translator-input" onchange="typing(this);" placeholder="Metin yazmaya başlayın veya bir bağlantı yapıştırın"></textarea>
+          </div>
+        </div>
+      
+        <div class="box-container translator" id="translator-image-container">
+          <div id="image-upload">
+            <div id="image-upload-text">
+              <div class="upload-text">
+                <div class="image-translate" id="photo-text">
+                  Fotoğrafın Çevirisi Yapılıyor
+                </div>
+                <div class="image-translate">
+                  Dosyayı buraya sürükleyin veya
+                  <span id="choose">seçin</span>
+                </div>
+              </div>
+              <img src="https://yastatic.net/s3/translate/v127.6/dist/scripts/bundles/71d93db339161038f651.svg" alt="" id="upload-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+      
+  <main class="page-content">
+    <section class="mid-description">
+      <div class="desc-img">
+        <img src="https://yastatic.net/s3/translate/v128.6/i/desktop/popularTranslations/popularTranslations.png" alt="" id="img-desc" />
+      </div>
+      <div class="desc">
+        <h1>100+ dilde çevirmen</h1>
+        <p class="text">
+          Yandex Çeviri ; 102 dil için eşzamanlı çeviri, yazım sırasında ipuçları, çevirisi aranan sözcüklerin fonetik alfabeyle yazılan telaffuz notları ile ses kayıtlarını ve kullanım örneklerini içeren sözlük ve diğer özellikler.
+        </p>
+      </div>
+    </section>
+    <section class="popular-translations">
+      <h1>En popüler çeviri dilleri</h1>
+      <div class="popular-translations-list">
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;İngilizce</a>
+        <a href="#" class="popular-translations-list-item">İngilizce&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;Rusça</a>
+        <a href="#" class="popular-translations-list-item">Rusça&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;Almanca</a>
+        <a href="#" class="popular-translations-list-item">Almanca&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;Fransızca</a>
+        <a href="#" class="popular-translations-list-item">Fransızca&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Arapça&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;İspanyolca</a>
+        <a href="#" class="popular-translations-list-item">İspanyolca&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;Özbekçe</a>
+        <a href="#" class="popular-translations-list-item">Özbekçe&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;İtalyanca</a>
+        <a href="#" class="popular-translations-list-item">İtalyanca&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Türkçe&nbsp; &rarr; &nbsp;Kazakça</a>
+        <a href="#" class="popular-translations-list-item">Kazakça&nbsp; &rarr; &nbsp;Türkçe</a>
+        <a href="#" class="popular-translations-list-item">Tükçe&nbsp; &rarr; &nbsp;Portekizce</a>
+        <a href="#" class="popular-translations-list-item">Portekizce&nbsp; &rarr; &nbsp;Türkçe</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <div class="footer-content">
+      <ul class="footer-links">
+        <li><a href="#">Teknik Destek</a></li>
+        <li><a href="#">Mobil sürüm</a></li>
+        <li><a href="#">Yardım</a></li>
+        <li><a href="#">Popüler Çeviriler</a></li>
+        <li><a href="#">2011-2024 Yandex</a></li>
+        <li><a href="#">Geliştiriciler İçin</a></li>
+        <li><a href="#">Kullanıcı sözleşmesi</a></li>
+        <li><a href="#">Türkçe ✔️</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#">İş İçin</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
